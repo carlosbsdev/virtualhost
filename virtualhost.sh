@@ -87,7 +87,7 @@ if [ "$action" == 'create' ]
 		    <VirtualHost $domain:80>
 			    ServerAdmin $email
 			    ServerName $domain
-			    ServerAlias $domain
+			    ServerAlias www.$domain
 			    DocumentRoot $rootDir
 				<Directory />
 				    AllowOverride all
@@ -125,7 +125,7 @@ if [ "$action" == 'create' ]
 		    <VirtualHost $domain:80>
 			    ServerAdmin $email
 			    ServerName $domain
-			    ServerAlias $domain
+			    ServerAlias www.$domain
 			    DocumentRoot $rootDir
 				
 			    <Directory />
@@ -140,7 +140,7 @@ if [ "$action" == 'create' ]
 			    LogLevel error
 			    CustomLog /var/log/apache2/$domain-access.log combined
 			    Header always set Strict-Transport-Security \"max-age=63072000; includeSubDomains\"
-			    #   Force redirect to https(port 443) and non-wwww.
+	        #   Force redirect to https(port 443) and non-wwww.
                 RewriteEngine on
                 RewriteCond %{HTTP_HOST} ^www\\.(.*)\$ [NC]
                 RewriteRule ^(.*)\$ https://%1/\$1 [R=301,L]
@@ -150,10 +150,11 @@ if [ "$action" == 'create' ]
             <VirtualHost $domain:443>
                 ServerAdmin $email
                 ServerName $domain
+		ServerAlias www.$domain
                 DocumentRoot $rootDir
 				
-				Header always set Strict-Transport-Security \"max-age=63072000; includeSubDomains\"
-				#   Force redirect to https(port 443) and non-wwww.
+		Header always set Strict-Transport-Security \"max-age=63072000; includeSubDomains\"
+		#   Force redirect to https(port 443) and non-wwww.
                 RewriteEngine on
                 RewriteCond %{HTTP_HOST} ^www\\.(.*)\$ [NC]
                 RewriteRule ^(.*)\$ https://%1/\$1 [R=301,L]
