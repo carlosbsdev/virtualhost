@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Virtualhost Manage Script\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: Cynthia Pereira <cynthiacpereira@gmail.com>\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_ES\n"
+
+#: virtualhost.sh:19
+msgid "You have no permission to run $0 as non-root user. Use sudo"
+msgstr "No tienes permiso para ejecutar $0 como usuario no-root. Usa sudo"
+
+#: virtualhost.sh:25
+msgid "You need to prompt for action (create or delete) -- Lower-case only"
+msgstr "Necesitas elegir una acción (create o delete) - Sólo minúsculas"
+
+#: virtualhost.sh:31
+msgid "Please provide domain. e.g.dev,staging"
+msgstr "Por favor introduce el dominio"
+
+#: virtualhost.sh:43
+msgid "This domain already exists.\\nPlease Try Another one"
+msgstr "Este dominio ya existe.\\nPor favor prueba otro"
+
+#: virtualhost.sh:56
+msgid ""
+"ERROR: Not able to write in file $userDir/$rootdir/phpinfo.php. Please check "
+"permissions."
+msgstr ""
+"ERROR: No se ha podido escribir en el archivo $userDir/$rootdir/index.php. "
+"Por favor comprueba los permisos."
+
+#: virtualhost.sh:59
+msgid "Added content to $userDir$rootdir/phpinfo.php."
+msgstr "Contenido añadido en $userDir$rootdir/index.php."
+
+#: virtualhost.sh:83
+msgid "There is an ERROR create $domain file"
+msgstr "Hay un ERROR creando el archivo $domain"
+
+#: virtualhost.sh:86
+msgid "\\nNew Virtual Host Created\\n"
+msgstr "\\nNuevo Virtual Host creado\\n"
+
+#: virtualhost.sh:92
+msgid "ERROR: Not able write in /etc/hosts"
+msgstr "ERROR: No se puede escribir en /etc/hosts"
+
+#: virtualhost.sh:95
+msgid "Host added to /etc/hosts file \\n"
+msgstr "Host añadido en el archivo /etc/hosts \\n"
+
+#: virtualhost.sh:111
+msgid ""
+"Complete! \\nYou now have a new Virtual Host \\nYour new host is: http://"
+"$domain \\nAnd its located at $userDir$rootdir"
+msgstr ""
+"Completado!\\nAhora tienes un nuevo Virtual Host\\nTu nuevo host es: http://"
+"$domain \\nEstá situado en $userDir$rootdir"
+
+#: virtualhost.sh:116
+msgid "This domain dont exists.\\nPlease Try Another one"
+msgstr "Este dominio no existe. \\nPor favor prueba con otro"
+
+#: virtualhost.sh:135
+msgid "Delete host root directory ? (s/n)"
+msgstr "Eliminar el directorio raíz del host? (s/n)"
+
+#: virtualhost.sh:141
+msgid "Directory deleted"
+msgstr "Directorio eliminado"
+
+#: virtualhost.sh:143
+msgid "Host directory conserved"
+msgstr "Directorio del host conservado"
+
+#: virtualhost.sh:146
+msgid "Host directory not found. Ignored"
+msgstr "Directorio del host no encontrado. Ignorado"
+
+#: virtualhost.sh:150
+msgid "Complete!\\nYou just removed Virtual Host $domain"
+msgstr "Completado!\\nHa sido eliminado el Virtual Host $domain"
