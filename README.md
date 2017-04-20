@@ -52,7 +52,7 @@ $ sudo virtualhost create mysite.com
 to create a new virtual host with custom directory name:
 
 ```bash
-$ sudo virtualhost create anothersite.com my_dir
+$ sudo virtualhost create anothersite.com /var/www/dev/
 ```
 to delete a virtual host
 
@@ -63,7 +63,7 @@ $ sudo virtualhost delete mysite.dev
 to delete a virtual host with custom directory name:
 
 ```
-$ sudo virtualhost delete anothersite.dev my_dir
+$ sudo virtualhost delete anothersite.dev /var/www/dev/
 ```
 ### Localization
 
