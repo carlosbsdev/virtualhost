@@ -42,7 +42,11 @@ With script installed on /usr/local/bin:
 $ sudo virtualhost [create | delete] [domain] [optional host_dir]
 ```
 
+
+## Add LetsEncrypt CA cert ##
+
 Add LetsEncrypt CA cert (install letsencrypt first) to your Virtual Host with https.
+
 Add www. and non-www domains for fix security during the redirect (https://www.example.com -> https://example.com):
 
 ```bash
